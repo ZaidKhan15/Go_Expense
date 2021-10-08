@@ -34,7 +34,7 @@ class MyHomePage extends StatelessWidget {
               Container(
                 width: double.infinity,
                 child: Card(
-                  color: Colors.deepPurpleAccent[100],
+                  color: Colors.blue[200],
                   child: Container(
                     width: 100,
                     height: 100,
