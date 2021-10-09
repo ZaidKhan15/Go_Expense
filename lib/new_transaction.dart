@@ -38,20 +38,20 @@ if(enteredText.isEmpty || enteredAmount <= 0)
                   TextField(
                     decoration: InputDecoration(labelText: 'Title'),
                    controller: titleController,
-                    onSubmitted: (_) => submitData,
+                    onSubmitted: (_) => submitData(),
                    //onChanged: (val){ titleInput = val;                    },
                   ),
                   TextField(
                     decoration: InputDecoration(labelText: 'Amount'),
                     controller: amountController,
                     keyboardType: TextInputType.number,
-                    onSubmitted: (_) => submitData,
+                    onSubmitted: (_) => submitData(),
                     //onChanged: (val) => amountInput = val ,
                   ),
                   FlatButton(
                     child: Text('Add Transaction'),
                     textColor: Colors.blue[200],
-                    onPressed:()=>submitData(),
+                    onPressed:()=>submitData,
                   ),    
                 ],
               ),
